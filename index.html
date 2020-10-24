@@ -2,24 +2,26 @@
 <html lang="es">
   <head>
     <title>Proyecto: Expresiones regulares </title>
+    <link rel="shortcut icon" href="img/escudo.png" type="image/png">
+    <meta name="description" content="Implementar expresiones regulares para validar entradas a un programa escrito con JavaScript. Proyecto creado para Compiladores 2020II.">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
-  <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <a class="navbar-brand" href="#">Expresiones regulares</a>
+  <body style="background-color: #e0dfdf;">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"> <img src="img/escudo.png" alt="" width="30px" height="30px"> Expresiones regulares</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <div class="collapse navbar-collapse justify-content-sm-end" id="collapsibleNavId">
+            <ul class="navbar-nav mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="https://github.com/laurasierr/RegExpCompiladores">GitHub<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://github.com/laurasierr/RegExpCompiladores"><i class="fa fa-github" aria-hidden="true"></i>  Proyecto en GitHub<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
 
@@ -46,23 +48,26 @@
                 </p>
             </div>
         </div>
-        <div class="container">
+        <div class="container-fluid text-center">
             <div class="row justify-content-sm-center" style="margin-top: 3%;">
                 <div class="col-sm-auto">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 100%;">
                         <div class="card-body">
                           <h5 class="card-title">Ingrese la contraseña a validar: </h5>
                           <!-- Formulario para validar, agregar en action la funcion JS, deben llamar el archivo .js que valida el input-->
-                            <form action="">
-                                <input type="text">
-                                <br><button type="submit" class="btn btn-primary" style="margin-top: 5%;">Validar</button>
+                            <form action="" method="GET">
+                                <input type="text" class="form-control" id="contra">
+                                <br><button type="submit" class="btn btn-primary" onclick="evCadena()">Validar</button>
                             </form>
                         </div>
+                        <div class="card-footer text-muted">Ejemplo: "A123abc.-?"</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!--Script para validar la expresion-->
+    <script src="script.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
