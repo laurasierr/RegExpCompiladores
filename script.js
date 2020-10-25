@@ -3,7 +3,19 @@ function evCadena(){
     let regExp = /^[A-Z]\d{3}\w{3}\W{3}$/;
 
     if(regExp.test(x))
-        alert("Contraseña correcta.");
+        Swal.fire({
+            icon: 'success',
+            title: 'Contraseña valida.',
+            showConfirmButton: false,
+            timer: 1500
+          })
     else
-        alert("Contraseña incorrecta");
+        Swal.fire({
+            icon: 'error',
+            title: 'Contraseña invalida. Comprele silla de ruedas.',
+            showConfirmButton: false,
+            timer: 1500
+          })
+    
+        
 }
