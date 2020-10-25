@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   </head>
   <body style="background-color: #e0dfdf;">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -24,7 +25,6 @@
                     <a class="nav-link" href="https://github.com/laurasierr/RegExpCompiladores"><i class="fa fa-github" aria-hidden="true"></i>  Proyecto en GitHub<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
-
         </div>
     </nav>
 
@@ -37,8 +37,7 @@
         </div>
         <div class="row">
             <div class="col-sm">
-                <p>
-                    Esta herramienta está creada para validar si su contraseña cumple con los parametros establecidos en el siguiente orden:
+                <p>Esta herramienta está creada para validar si su contraseña cumple con los parametros establecidos en el siguiente orden:
                     <ul>
                         <li>Debe iniciar con una letra MAYÚSCULA.</li>
                         <li>Contener tres digitos.</li>
@@ -55,13 +54,9 @@
                         <div class="card-body">
                           <h5 class="card-title">Ingrese la contraseña a validar: </h5>
                           <!-- Formulario para validar, agregar en action la funcion JS, deben llamar el archivo .js que valida el input-->
-                            <form action="" method="GET">
+                            <form autocomplete="off">
                                 <input type="text" class="form-control" id="contra">
-                                <div>
-                                  <h6 id="alr1" style="display: none;">Contraseña no valida. Por favor verifique los parametros e intente nuevamente.</h6>
-                                  <h6 id="alr2" style="display: none;">Contraseña valida.</h6>
-                                </div>
-                                <br><button type="submit" class="btn btn-primary" onclick="evCadena()">Validar</button>
+                                <button type="submit" style="margin-top: 20px;" class="btn btn-primary">Validar</button>
                             </form>
                         </div>
                         <div class="card-footer text-muted">Ejemplo: "A123abc.-?"</div>
@@ -70,9 +65,12 @@
             </div>
         </div>
     </div>
+    <footer class="page-footer font-small" style="background-color: black; color: white; margin-top: 5%;">
+        <div class="footer-copyright text-center py-3">Realizado por: Laura Sierra García - 2017114107 
+        </div>
+    </footer>
     <!--Script para validar la expresion-->
     <script src="js/script.js"></script>
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
